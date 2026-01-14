@@ -1,46 +1,42 @@
-<section class="lead-engine-section">
-    <div class="form-container">
-        <h2>// Initiate Technical Audit</h2>
-        <p>Analyze your infrastructure. Identify bottlenecks. Scale effortlessly.</p>
-        
-        <form action="YOUR_N8N_URL_HERE" method="POST" id="leadForm">
-            <div class="field-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Director Name" required>
+<section class="lead-engine">
+    <div class="form-wrapper">
+        <div class="form-header">
+            <h3>// SYSTEM_INITIATION</h3>
+            <h2>Real Estate Technical Audit</h2>
+            <p>Architect your operations. Automate your pipeline. Scale with logic.</p>
+        </div>
+
+        <form action="YOUR_PRODUCTION_WEBHOOK_URL" method="POST" class="architect-form">
+            <div class="input-group">
+                <label for="name">Lead Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
             </div>
 
-            <div class="field-group">
-                <label for="email">Work Email</label>
-                <input type="email" id="email" name="email" placeholder="name@company.com" required>
+            <div class="input-group">
+                <label for="email">Corporate Email</label>
+                <input type="email" id="email" name="email" placeholder="name@firm.com" required>
             </div>
 
-            <div class="field-group">
-                <label for="budget">Annual Operational Budget</label>
+            <div class="input-group">
+                <label for="budget">Investment Band</label>
                 <select id="budget" name="budget" required>
-                    <option value="" disabled selected>Select Range</option>
-                    <option value="under_100k">Under $100k</option>
-                    <option value="100k_500k">$100k - $500k</option>
-                    <option value="over_500k">$500k+</option>
+                    <option value="" disabled selected>Select Budget Range</option>
+                    <option value="100k-500k">$100,000 - $500,000</option>
+                    <option value="500k-1m">$500,000 - $1M</option>
+                    <option value="over-1m">$1M + (High Priority)</option>
                 </select>
             </div>
 
-            <div class="field-group">
-                <label for="timeline">Implementation Timeline</label>
-                <select id="timeline" name="timeline" required>
-                    <option value="" disabled selected>Select Urgency</option>
-                    <option value="immediate">Immediate (Within 30 days)</option>
-                    <option value="quarterly">Strategic (Next 3-6 months)</option>
-                    <option value="research">Research Phase</option>
-                </select>
+            <div class="input-group">
+                <label for="message">Operational Constraints</label>
+                <textarea id="message" name="message" rows="4" placeholder="Describe your manual friction points..."></textarea>
             </div>
 
-            <div class="field-group">
-                <label for="message">Current Operational Friction</label>
-                <textarea id="message" name="message" rows="4" placeholder="Briefly describe your manual bottlenecks..."></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Run Technical Audit</button>
+            <button type="submit" class="submit-logic-btn">
+                Run Autonomous Audit
+            </button>
+            
+            <span class="lock-tag">Secure End-to-End Encryption Enabled</span>
         </form>
-        <p class="privacy-note">We respect technical sovereignty. No spam. Ever.</p>
     </div>
 </section>
